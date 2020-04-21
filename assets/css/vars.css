@@ -1,18 +1,17 @@
 /* Variables
 /* ---------------------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,600,700,700i,800');
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,600,700,700i,800");
 
 :root {
-
     /* Colours */
     --color-primary: #3eb0ef;
     --color-base: #131313;
     --color-border: #ddd;
-    --color-bg: #C1D7AE;
+    --color-bg: #a3bac3;
 
     /* Fonts */
-    --font-sans-serif: 'Muli', sans-serif;
+    --font-sans-serif: "Roboto", sans-serif;
     --font-serif: Georgia, Times, serif;
     --font-mono: Menlo, Courier, monospace;
     --font-light: 100;
@@ -31,5 +30,13 @@
     --height: 4rem;
     --margin: 2rem;
     --radius: 0.5rem;
-
 }
+
+/* This works, just not with variables */
+/*
+@media (prefers-color-scheme: dark) {
+    [data-theme="dark"] body {
+        background: black;
+    }
+}
+*/

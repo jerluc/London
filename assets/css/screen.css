@@ -5,7 +5,6 @@ production stylesheet in assets/built/screen.css using gulp dev
 
 */
 
-
 /* Lib - Local component imports
 /* ---------------------------------------------------------- */
 @import "vars.css";
@@ -20,12 +19,11 @@ production stylesheet in assets/built/screen.css using gulp dev
 @import "components/hamburger.css";
 @import "components/animations.css";
 
-
 /* Main - Theme styles
 /* ---------------------------------------------------------- */
 
 body {
-    font-family: 'Muli', sans-serif;
+    font-family: var(--font-sans-serif);
     background: var(--color-bg);
     transition: background 0.3s ease-out;
     transition-delay: 0.25;
@@ -45,7 +43,6 @@ body {
     position: absolute;
     text-indent: -9999px;
 }
-
 
 /* Layout
 /* ---------------------------------------------------------- */
@@ -130,7 +127,6 @@ body {
     color: var(--color-base);
 }
 
-
 /* Site Navigation
 /* ---------------------------------------------------------- */
 
@@ -149,7 +145,7 @@ body {
 
 .site-head-left {
     position: relative;
-        z-index: 100;
+    z-index: 100;
     display: flex;
     align-items: center;
     margin-right: 10px;
@@ -217,7 +213,7 @@ body {
 
 .site-head-right {
     position: relative;
-        z-index: 100;
+    z-index: 100;
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -260,7 +256,6 @@ body {
     fill: var(--color-base);
 }
 
-
 /* Mobile Nav Menu
 /* ---------------------------------------------------------- */
 
@@ -284,7 +279,7 @@ body {
         flex-direction: column;
         justify-content: flex-start;
         height: 40px;
-        background: rgba(255,255,255,0);
+        background: rgba(255, 255, 255, 0);
         z-index: -1;
         transition: all 0.4s ease-out;
         overflow: hidden;
@@ -307,7 +302,7 @@ body {
         font-weight: 200;
         opacity: 0;
         transition: transform 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99),
-        opacity 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+            opacity 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
         transform: scale(1.1) translateY(-25px);
     }
     .site-head-right a {
@@ -345,7 +340,7 @@ body {
     }
 
     .site-head-open {
-        background: rgba(255,255,255,1);
+        background: rgba(255, 255, 255, 1);
         transition: background 0.5s ease-out;
         transition-delay: 0.25;
         overflow: hidden;
@@ -369,7 +364,7 @@ body {
     .site-head-open .site-head-right a {
         opacity: 1;
         transition: transform 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99),
-        opacity 0.9s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+            opacity 0.9s cubic-bezier(0.4, 0.01, 0.165, 0.99);
         transform: scale(1) translateY(0px);
     }
     .site-head-open .nav-current a {
@@ -386,9 +381,7 @@ body {
         transition: transform 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
         transform: translateY(-4vw);
     }
-
 }
-
 
 /* Post Feed
 /* ---------------------------------------------------------- */
@@ -437,23 +430,23 @@ body {
     bottom: 0;
     left: 0;
     color: #fff;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
     opacity: 1;
-    transition: opacity 0.5s cubic-bezier(.33,0,.2,1);
+    transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
 .post-card.with-image .post-card-content {
     opacity: 0;
 }
 @media (max-width: 700px) {
-  .post-card.with-image .post-card-content {
-      opacity: 1;
-  }
+    .post-card.with-image .post-card-content {
+        opacity: 1;
+    }
 }
 
 .post-card-link:hover .post-card-content {
     opacity: 1;
-    transition: opacity 0.3s cubic-bezier(.33,0,.2,1);
+    transition: opacity 0.3s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
 .post-card-title {
@@ -462,7 +455,7 @@ body {
     font-size: 3.4rem;
     max-width: 70%;
     text-align: center;
-    transition: all 0.3s cubic-bezier(.33,0,.2,1);
+    transition: all 0.3s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
 /* Posts without images */
@@ -476,7 +469,7 @@ body {
     line-height: 1em;
     font-weight: var(--font-heavy);
     letter-spacing: -0.1em;
-    color: rgba(0,0,0,0.2);
+    color: rgba(0, 0, 0, 0.2);
 }
 
 .post-card.no-image .post-card-content {
@@ -604,7 +597,7 @@ body {
     padding: 0 5px 2px;
     font-size: 0.8em;
     line-height: 1em;
-    font-weight: 400!important;
+    font-weight: 400 !important;
     background: var(--color-bg);
     border-radius: 3px;
 }
