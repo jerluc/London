@@ -7,8 +7,13 @@
     /* Colours */
     --color-primary: #3eb0ef;
     --color-base: #131313;
-    --color-border: #ddd;
+    --color-border: #333333;
     --color-bg: #a3bac3;
+
+    --dark-color-primary: #3eb0ef;
+    --dark-color-base: #fafafa;
+    --dark-color-border: #dddddd;
+    --dark-color-bg: #3a4245;
 
     /* Fonts */
     --font-sans-serif: "Roboto", sans-serif;
@@ -31,12 +36,3 @@
     --margin: 2rem;
     --radius: 0.5rem;
 }
-
-/* This works, just not with variables */
-/*
-@media (prefers-color-scheme: dark) {
-    [data-theme="dark"] body {
-        background: black;
-    }
-}
-*/
