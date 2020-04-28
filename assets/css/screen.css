@@ -25,6 +25,7 @@ production stylesheet in assets/built/screen.css using gulp dev
 body {
     font-family: var(--font-sans-serif);
     background: var(--color-bg);
+    color: var(--color-base);
     transition: background 0.3s ease-out;
     transition-delay: 0.25;
 }
@@ -211,6 +212,13 @@ body {
     height: 28px;
 }
 
+@media (prefers-color-scheme: dark) {
+    .site-head-logo img {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+}
+
 .site-head-right {
     position: relative;
     z-index: 100;
@@ -340,7 +348,7 @@ body {
     }
 
     .site-head-open {
-        background: rgba(255, 255, 255, 1);
+        background: color(var(--color-bg) l(+10%));
         transition: background 0.5s ease-out;
         transition-delay: 0.25;
         overflow: hidden;
@@ -430,7 +438,7 @@ body {
     bottom: 0;
     left: 0;
     color: #fff;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.25);
     opacity: 1;
     transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
 }
@@ -536,12 +544,6 @@ body {
 
 .post-content-image {
     margin: 4vw 0;
-    position: relative;
-    width: 75vw;
-    min-width: 100%;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    transform: translateX(calc(50vw - 50%));
 }
 
 .post-content-body {
