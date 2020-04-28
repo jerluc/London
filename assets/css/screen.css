@@ -54,7 +54,7 @@ body {
 }
 @media (max-width: 850px) {
     .site-wrapper {
-        padding: 6vw;
+        padding: 4vw;
     }
 }
 
@@ -97,6 +97,7 @@ body {
 .page-head-title {
     margin: 0;
     font-size: 4.2rem;
+    font-weight: 300;
     color: var(--color-base);
 }
 @media (max-width: 500px) {
@@ -118,7 +119,7 @@ body {
 }
 
 .site-foot {
-    margin: 3vw 0 1vw;
+    margin: 3vw 0 0;
     text-align: center;
     color: color(var(--color-border) l(-20%));
     font-size: 1.4rem;
@@ -192,7 +193,7 @@ body {
 .site-head-logo {
     flex-shrink: 0;
     display: block;
-    padding: 10px;
+    padding: 5px 10px;
     color: var(--color-base);
     font-size: 2.1rem;
     line-height: 1em;
@@ -207,9 +208,8 @@ body {
 
 .site-head-logo img {
     display: block;
-    margin-top: 2px;
     width: auto;
-    height: 28px;
+    height: 32px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -348,7 +348,7 @@ body {
     }
 
     .site-head-open {
-        background: color(var(--color-bg) l(+10%));
+        background: color(var(--color-bg) l(-10%));
         transition: background 0.5s ease-out;
         transition-delay: 0.25;
         overflow: hidden;
@@ -414,7 +414,8 @@ body {
 @media (max-width: 700px) {
     .post-card {
         flex: 1 1 100%;
-        height: 70vw;
+        height: 50vh;
+        margin: 0 -4vw;
     }
 }
 
