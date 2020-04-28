@@ -42,8 +42,8 @@ function hbs(done) {
 
 function css(done) {
     var processors = [
-        darkTheme(),
         easyimport,
+        darkTheme(),
         customProperties({ preserve: false }),
         colorFunction(),
         autoprefixer(),
